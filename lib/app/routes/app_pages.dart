@@ -8,6 +8,7 @@ import '../modules/jurusan/bindings/jurusan_binding.dart';
 import '../modules/jurusan/views/jurusan_view.dart';
 import '../modules/mapel/bindings/mapel_binding.dart';
 import '../modules/mapel/views/mapel_view.dart';
+import '../modules/mapel/views/mapel_tambah_view.dart';
 
 part 'app_routes.dart';
 
@@ -36,6 +37,11 @@ class AppPages {
       name: _Paths.JURUSAN,
       page: () => const JurusanView(),
       binding: JurusanBinding(),
+    ),
+    GetPage(
+      name: _Paths.MAPELTAMBAH,
+      page: () => const MapelTambahView(),
+      binding: MapelBinding(),
     ),
   ];
 }
